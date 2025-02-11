@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laba2</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        th{
+            text-align: center;
+        padding: 10px;
+        border: 3px solid rgb(75, 75, 75);
+        }
+
+        td {
+        padding: 10px;
+        border: 3px solid rgb(75, 75, 75);}
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        ul {
+        list-style-type: none;
+        }
+        ul li {
+        font-size: 18px;
+        line-height: 18px;
+        position: relative;
+        }
+        ul li::before {
+        content:"\2022";
+        font-size: 20px;
+        left: -15px;      
+        position: absolute;
+        }
+    </style>
+    
+</head>
+<body>
+    <p>Заполните обязательные поля, чтобы добавить данные в таблицу</p>
+    <P>
+        <label for="gem stoun">Тип камушков:</label>
+        <select id="gem stoun" name="gem stoun">
+            <option value="сапфиры">сапфиры</option>
+            <option value="рубины">рубины</option>
+            <option value="алмазы">алмазы</option>
+        </select>
+    </P>
+    <p>
+
+        <label for="date">Год:</label>
+        <input type="date"/>
+    </p>
+    <p>
+        <label for="value">Количество:</label>
+        <input type="number">
+    </p>
+    <p>
+        <button type="submit">Отправить</button>
+    </p>
+    <table>
+        <caption>Добыча драгоценных камней</caption>
+        <tr>
+            <th rowspan="2">Камушек</th>
+            <th colspan="3">Год</th>
+        </tr>
+        <tr>
+            <th>2010</th>
+            <th>2012</th>
+            <th>2014</th>
+        </tr>
+        <tr>
+            <td>Сапфир</td>
+            <td rowspan="2">1483</td>
+            <td>4532</td>
+            <td>6743</td>
+        </tr>
+        <tr>
+            <td>Рубин</td>
+            <td>3835</td>
+            <td>7482</td>
+        </tr>
+        <tr>
+            <td>Алмаз</td>
+            <td>683</td>
+            <td colspan="2">238</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td colspan="4">Итого: много миллионов
+                    <ol type="I">
+                        <li>Итоги по видам драгоценных камней: много тысяч
+                            <ul>
+                                <li><a href="none">Сапфир</a> немыслемое количество</li>
+                                <li>Но <a href="none">рубинов</a> под конец все же больше</li>
+                            </ul>
+                        </li>
+                        <li>Итого по полудрагоценных камней
+                            <ul>
+                                <li><a href="none">Изумрудов</a> 0</li>
+                                <li><a href="none">Топазов</a> 0</li>
+                                <li><a href="none">Опалов</a> тоже 0</li>
+                                
+                            </ul>
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+
+        </tfoot>
+    </table>
+
+</body>
+</html>
